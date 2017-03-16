@@ -1,0 +1,11 @@
+
+public class TimeClient {
+
+	public static void main(String[] args) {
+		Time myTime = new Time(500,60,100);
+		
+		System.out.println(myTime);
+		
+	}
+
+}
