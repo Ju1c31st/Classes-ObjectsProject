@@ -1,0 +1,50 @@
+
+public class Time {
+	private int hour, minute, second;
+
+	public Time(int h, int m, int s){
+		setHour(h);
+		setMinute(m);
+		setSecond(s);
+	}
+	//getter, setter 
+	public int getHour(){
+		return hour;
+	}
+	public int getMinute(){
+		return minute; 
+	}
+	public int getSecond(){
+		return second;
+	}
+	public void setHour(int h){
+		if(h>0 && h<23){
+			hour = h;
+		}else if(h<0){
+			hour =0;
+		}else{
+			hour = 23;
+		}
+	}
+	public void setMinute(int m){
+		if(m>0 && m<59){
+			minute = m;
+		}else if(m<0){
+			minute =0;
+		}else{
+			minute = 59;
+		}
+	}
+	public void setSecond(int s){
+		if(s>0 && s<59){
+			second = s;
+		}else if(s<0){
+			second =0;
+		}else{
+			second = 59;
+		}
+	}
+	public String toString(){
+		return "The time is: "+hour+":"+minute+":"+second;
+	}
+}
